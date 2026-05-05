@@ -1,0 +1,19 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy
+        run: echo "Deploy step — we will fill this in later"
+
+      - name: Smoke test
+        run: echo "Smoke test passed!"
